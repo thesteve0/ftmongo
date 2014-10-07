@@ -12,7 +12,7 @@ var port = parseInt(container.env['OPENSHIFT_VERTX_PORT'] || 8080);
 
 //for the mongo persistor
 var dbdns = container.env['OPENSHIFT_MONGODB_DB_HOST'];
-var dbport = container.env['OPENSHIFT_MONGODB_DB_PORT'];
+var dbport = parseInt(container.env['OPENSHIFT_MONGODB_DB_PORT']);
 var dbusername = container.env['OPENSHIFT_MONGODB_DB_USERNAME'];
 var dbpassword =container.env['OPENSHIFT_MONGODB_DB_PASSWORD'];
 var database = container.env['OPENSHIFT_APP_NAME'];
