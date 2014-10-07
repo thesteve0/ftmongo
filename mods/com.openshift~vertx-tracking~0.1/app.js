@@ -44,4 +44,7 @@ container.deployModule("io.vertx~mod-mongo-persistor~2.1.0-final",{
     username: dbusername,
     password: dbpassword,
     db_name: database
-});
+    },
+    function(err, deployID){
+    console.log("started mongo persistor " + err)}
+);
