@@ -38,7 +38,7 @@ container.deployModule("io.vertx~mod-web-server~2.0.0-final",
 
 container.deployVerticle("com.openshift.FeedGetter");
 container.deployVerticle("FlightPublisher.py")
-container.deployModule("io.vertx~mod-mongo-persistor~2.1.0-final",{
+container.deployModule("io.vertx~mod-mongo-persistor~2.0.0-final",{
     host: dbdns,
     port: dbport,
     username: dbusername,
