@@ -30,7 +30,7 @@ def handler(msg):
         forMongo = JsonObject()
         forMongo.putString("action", "save")
         forMongo.putString("collection", "buses")
-        forMongo.putObject(the_flight)
+        forMongo.putObject("document", the_flight)
         #persist it
         EventBus.publish('vertx.mongopersistor', forMongo)
 
